@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      nav {
+  background-color: #0077cc;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+  body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 40px;
+  }
+  h1 {
+    color: #0077cc;
+  }
+  a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+      
+      header, section, footer {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      
+ 
+}
+
+img {
+  border-radius: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* helps on smaller screens */
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-image img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 250px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.dark-mode header,
+.dark-mode section,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode nav {
+  background-color: #333;
+}
+
+.dark-mode nav a {
+  color: #ddd;
+}
+
+.dark-mode nav a:hover {
+  color: #ffcc00;
+}
+
+.dark-mode button {
+  background-color: #444
+
+#toggleTheme {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#toggleTheme:hover {
+  background-color: #005fa3;
+}
+
+/* Style for Dark Mode Button inside Nav */
+#toggleTheme {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#toggleTheme:hover {
+  background-color: white;
+  color: #0077cc;
+}
+     nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .links {
+  display: flex;
+  gap: 15px;
+}
+
+nav button {
+  margin-left: auto;
+}
+ #toggleTheme {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#toggleTheme:hover {
+  background-color: white;
+  color: #0077cc;
+}
+#toggleTheme {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+#toggleTheme:hover {
+  transform: rotate(20deg);
+}
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+#formFeedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+</style>
+    
+<body>
+  
+  <nav>
+    
+   <nav>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#photo">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+<button id="toggleTheme">🌙</button>
+</nav>
+
+    
+</nav>
+
+  <header>
+    <button id="welcomeBtn">Click Me!</button>
+<p id="message"></p>
+
+    <h1>My First Website</h1>
+    <p>Welcome to my coding journey 🚀</p>
+    
+  </header>
+
+ <section id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Akash — an aspiring web developer learning how to code and create beautiful digital experiences.
+      </p>
+    </div>
+    <div class="about-image">
+      <img 
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+        alt="Coding setup"
+        width="350"
+      />
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects">
+    <h2>My Projects</h2>
+   <div class="projects-container">
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>A personal site showcasing my projects and journey.</p>
+  </div>
+  <div class="project-card">
+    <h3>Travel Blog</h3>
+    <p>Sharing stories and destinations from around the world.</p>
+  </div>
+  <div class="project-card">
+    <h3>Startup Landing Page</h3>
+    <p>A clean, responsive design for a new business idea.</p>
+  </div>
+</div>
+
+  </section>
+<section id="contact">
+ <section id="contact">
+  <h2>Contact Me</h2>
+ <form id="contactForm" action="https://formspree.io/f/mdkprzak" method="POST">
+  <label for="name">Name:</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" name="_replyto" required><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea name="message" rows="4" required></textarea><br><br>
+
+  <button type="submit">Send Message</button>
+</form>
+<p id="formFeedback"></p>
+
+  <p id="formFeedback"></p>
+</section>
+
+
+  <footer>
+    <p>© 2025 Akash Kashyap | Built with ❤️ using HTML & CSS</p>
+  </footer>
+  
+<script>
+  const themeButton = document.getElementById("toggleTheme");
+  themeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    themeButton.textContent = document.body.classList.contains("dark-mode") ? "🌞" : "🌙";
+  });
+</script>
+<script>
+  const form = document.getElementById("contactForm");
+  const feedback = document.getElementById("formFeedback");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // stops form from reloading page
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      feedback.textContent = "⚠️ Please fill in all fields.";
+      feedback.style.color = "red";
+      return;
+    }
+
+    feedback.textContent = `✅ Thanks ${name}, your message has been sent!`;
+    feedback.style.color = "green";
+    form.reset();
+  });
+</script>
+<script>
+  const form = document.getElementById("contactForm");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(() => {
+      document.getElementById("formFeedback").textContent = "✅ Message sent successfully!";
+      form.reset();
+    }).catch(() => {
+      document.getElementById("formFeedback").textContent = "❌ Something went wrong. Try again.";
+    });
+  });
+</script>
+
+
+</body>
+<section id="photo">
+  <h2>My Favorite Destination</h2>
+  <img 
+    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+    alt="Beach view"
+    width="400"
+  />
+</section>
+
+</html>
